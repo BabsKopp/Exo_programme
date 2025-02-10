@@ -16,21 +16,6 @@ class Technicien(Employe):
     def primes(self):
             prime = {"A" : 300, "B" : 200, "C" : 100}
             return prime.get(self.grade, 0)
-           
-            # if self.grade == "A":
-            #         primes = 300
-            #         break
-            # elif self.grade == "B":
-            #         primes = 200
-            #         return
-            #         break
-            # elif self.grade == "C":
-            #         primes = 100
-            #         break
-            # else:
-            #     print("Saisie invalide. Le grade doit correspondre à A, B ou C")
-        
-        # print(f"Primes : {primes} €")
     
     def afficher_grade(self):
         return(f"Grade : {self.grade}")
@@ -38,10 +23,6 @@ class Technicien(Employe):
     def afficher(self):
         return Employe.afficher(self) + ", " + self.afficher_grade() +", Primes : " + str(self.primes()) + "€"
           
-        
-    # def calcul_salaire(self): 
-    #     Employe.calcul_salaire()
-        
         
 
     
